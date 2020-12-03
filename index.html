@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>
+	<title>Relive your 90's|Central Perk.com</title>
+	<style>
+    *{
+    margin:0;
+    padding:0;
+  }
+#navbar::before{
+      content: "";
+      background-color: black;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.4;
+}
+#navbar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  top:0px;
+}
+#navbar ul{
+  display: flex;
+  font-family: 'Book Antiqua';
+}
+#navbar ul li{
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+#logo img{
+ height: 70px;
+ width: 70px;
+ margin: 3px 6px;
+ border-radius:50px;
+}
+#home{
+  display: flex;
+  flex-direction: column;
+  height:400px;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before{
+  content: "";
+  background: url('coffee2.jpg') ;
+  position: absolute;
+  height: 575px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1{
+  color: white;
+  text-align:center;
+  font-family: 'Herald';
+  margin: 25px;
+}
+#home p{
+  color: white;
+  text-align:center;
+  font-size: 1.5rem;
+  font-family: 'Monotype Corsiva'; 
+}
+.h-primary{
+  font-family: 'Book Antiqua'; 
+  font-size: 3.8rem;
+  padding: 12px;
+}
+#btn{
+  padding: 6px 20px;
+  background-color: brown;
+  color: white;
+  border:2px solid white;
+  border-radius: 10px;
+  margin: 17px;
+  font-size: 1.5rem;
+  cursor:pointer;
+  border-color: black;
+}
+#btn2{
+  padding: 6px 20px;
+  background-color: brown;
+  color: white;
+  border:2px solid white;
+  border-radius: 10px;
+  margin: 15px 215px;
+  font-size: 1.5rem;
+  cursor:pointer;
+  border-color: black;
+}
+.center{
+  text-align:center;
+}
+.h-secondary{
+  font-family: 'Book Antiqua'; 
+  font-size: 2.8rem;
+  padding: 12px;
+}
+#services{
+  margin:34px;
+  display:flex;
+}
+#services .box{
+  border:2px solid brown;
+  padding: 34px;
+  border-radius: 10px;
+  margin:3px 6px;
+  background: #f2f2f2;
+}
+#services .box img{
+  height:160px;
+  margin: auto;
+  display: block;
+  border-radius: 100px;
+}
+#services-container{
+  margin:100px 1px;
+}
+
+#client{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#client img{
+  border-radius: 100px;
+  padding: 35px;
+}
+.client-item{
+  padding:34px;
+
+}
+#client-section::before{
+  content: "";
+  background: url('wood.jpg') ;
+  position: absolute;
+  height: 393px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#client img{
+  height:144px;
+}
+#contact{
+  position: relative;
+  
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('contact.jpg') no-repeat center center/cover ;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1.3rem;
+}
+html{
+  scroll-behavior: smooth;
+}
+footer{
+  background:black;
+  color:white;
+  padding: 9px 20px;
+}
+</style>
+
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="G:\coffee shop\cafe.png" alt="CentralPerk.com">
+    </div>
+	<ul>
+    <li class="item"><a href="#home">Home</a></li>
+    <li class="item"><a href="#services-container">Services</a></li>
+    <li class="item"><a href="#contact">Contact Us</a></li>
+    <li class="item"><a href="#client-section">About Us</a></li>
+  </ul>
+  </nav>
+  <section id="home">
+    <h1 class="h-primary">Central Perk</h1>
+    <p>A bad day with coffee is better than a good day without it.</p>
+    <p>-Charles Walton</p>
+    <button id="btn">Order Now</button>
+  </section>
+  <section id="services-container">
+    <h1 class="h-primary center">Our Services</h1>
+    <div id="services">
+      <div class="box">
+        <img src="chai.jpg" alt="">
+        <h2 class="h-secondary center">Hot Beverages</h2>
+        <p class="center">Refreshing drinks. </p>
+      </div>
+
+      <div class="box">
+        <img src="del.jpg" alt="">
+        <h2 class="h-secondary center">Delivered Fast</h2>
+        <p class="center">Delivered within Minutes.</p>
+      </div>
+
+      <div class="box">
+        <img src="safe.jpg" alt="">
+        <h2 class="h-secondary center">100% Hygenic</h2>
+        <p class="center">Safe and Hygienic.</p>
+      </div>
+    </div>
+  </section>
+  <section id="client-section">
+    <h1 class="h-primary center">Our Clients</h1>
+    <div id="client">
+      <div class="client-item">
+        <img src="logo1.jpg" alt="pokket Cafe">
+        <img src="logo2.png" alt="Hard Rock Cafe">
+        <img src="logo3.jpg" alt="Cafe Creme">
+        <img src="logo4.jpg" alt="Casa del Cafe">
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h1 class="h-primary center">Contact Us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+          </div>
+          <div class="form-group">
+            <label for="e-mail">E-Mail: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your E-Mail">
+          </div>
+          <div class="form-group">
+            <label for="number">Phone Number: </label>
+            <input type="phone" name="number" id="number" placeholder="Enter your Number">
+          </div>
+          <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" rows="10" cols="10" ></textarea>
+          </div>
+          <button id="btn2">Submit</button>
+        </form>
+      </div>
+  </section>
+  <footer>
+    <div class="center">
+    Copyright &copy; CentralPerk.com. All Rights Reserved.
+  </div>
+  </footer>
+</body>
+</html>
